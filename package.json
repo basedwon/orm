@@ -1,0 +1,57 @@
+{
+  "name": "@plaindb/orm",
+  "version": "0.0.0",
+  "description": "A simple, yet extensible Object-Relational Mapping (ORM) library that allows you to interact with any key-value databse like LevelDB or Redis.",
+  "author": "Basedwon <basedwon@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basedwon/orm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/basedwon/orm/issues"
+  },
+  "homepage": "https://github.com/basedwon/orm#readme",
+  "main": "lib/orm.js",
+  "browser": {
+    ".": "./lib/orm.js"
+  },
+  "scripts": {
+    "dev:test": "nodemon -w ../.. -x npm test",
+    "dev": "nodemon -w ../.. test/orm.test.js",
+    "docs": "jsdoc2md \"lib/**/*.js\" > docs/api.md",
+    "update": "npm run update:prod && npm run update:dev",
+    "update:prod": "npm i -S basd@latest @basd/encoder@latest @basd/query@latest @basd/search@latest",
+    "update:dev": "npm i -D @basd/testr@latest @plaindb/storage@latest",
+    "test": "testr test"
+  },
+  "dependencies": {
+    "@basd/encoder": "^0.0.0",
+    "@basd/query": "^0.0.0",
+    "@basd/search": "^0.0.0",
+    "basd": "^1.0.13"
+  },
+  "devDependencies": {
+    "@basd/testr": "^0.1.2",
+    "@plaindb/storage": "^0.0.6",
+    "jsdoc": "^4.0.2",
+    "jsdoc-to-markdown": "^8.0.0"
+  },
+  "keywords": [
+    "ORM",
+    "plaindb",
+    "database",
+    "indexing",
+    "query-engine",
+    "models",
+    "encoder",
+    "list-handlers",
+    "aggregator",
+    "relations",
+    "fields",
+    "CRUD",
+    "NoSQL",
+    "storage",
+    "batch-ops"
+  ]
+}

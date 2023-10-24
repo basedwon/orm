@@ -88,4 +88,5 @@ jspm_packages/
 *.sublime*
 
 # project
+/.db
 /.archive

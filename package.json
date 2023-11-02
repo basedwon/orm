@@ -29,7 +29,7 @@
     "@basd/codex": "^0.0.3",
     "@basd/encoder": "^0.0.5",
     "@basd/formatter": "^0.0.2",
-    "@basd/query": "^0.0.1",
+    "@basd/query": "^0.0.2",
     "@basd/registry": "^0.0.1",
     "@basd/search": "^0.0.3",
     "@plaindb/index": "^0.0.1",

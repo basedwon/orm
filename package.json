@@ -1,6 +1,6 @@
 {
   "name": "@plaindb/orm",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple, yet extensible Object-Relational Mapping (ORM) library that allows you to interact with any key-value databse like LevelDB or Redis.",
   "author": "Basedwon <basedwon@protonmail.com>",
   "license": "MIT",

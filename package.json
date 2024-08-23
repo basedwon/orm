@@ -21,7 +21,7 @@
     "dev": "nodemon -w ../.. test/orm.tester.js",
     "docs": "jsdoc2md \"lib/**/*.js\" > docs/api.md",
     "update": "npm run update:prod && npm run update:dev",
-    "update:prod": "npm i -S basd@latest @basd/encoder@latest @basd/query@latest @basd/search@latest @plaindb/index@latest",
+    "update:prod": "npm i -S basd@latest @basd/encoder@latest @basd/formatter@latest @basd/query@latest @basd/search@latest @plaindb/index@latest @basd/registry@latest",
     "update:dev": "npm i -D @basd/testr@latest @plaindb/storage@latest",
     "test": "testr test"
   },
@@ -30,13 +30,13 @@
     "@basd/encoder": "^0.0.6",
     "@basd/formatter": "^0.0.2",
     "@basd/query": "^0.0.3",
-    "@basd/registry": "^0.0.1",
-    "@basd/search": "^0.0.4",
+    "@basd/registry": "^0.0.9",
+    "@basd/search": "^0.0.5",
     "@plaindb/index": "^0.0.3",
     "basd": "^1.0.16"
   },
   "devDependencies": {
-    "@basd/testr": "^0.1.2",
+    "@basd/testr": "^0.1.6",
     "@plaindb/storage": "^0.0.6",
     "jsdoc": "^4.0.2",
     "jsdoc-to-markdown": "^8.0.0"
